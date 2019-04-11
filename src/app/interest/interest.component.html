@@ -1,0 +1,22 @@
+<div class="interest-main-div">
+  <div class="header-text">
+    Pick your Interests...
+  </div>
+  <div class="interest-outer-div">
+    <div class="interest-div">
+      <div class="interest" *ngFor="let interest of interests" (click) = "toggleInterest(interest.interestId)">
+        <img src="./../../assets/interestImages/{{interest.interestImage}}  ">
+        <div class="circle-tick" *ngIf="isInterestSelected(interest.interestId)">
+          <span>
+              <i class="fa fa-check"aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="interestName" >{{interest.interestName}}</div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="submitInterest">
+    <button class="button" [disabled] = "selectedInterest.length < 3 ? true : false">{{selectedInterest.length < 3 ? 'Select 3 or more to continue' : 'Update Interest'}}</button>
+  </div>
+ </div>

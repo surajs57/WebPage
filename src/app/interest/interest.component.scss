@@ -1,0 +1,68 @@
+.interest-outer-div
+{
+   width: 100%;
+}
+.interest-div
+{
+   width:78%;
+   margin:auto;
+   padding:2%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.interest{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 250px;
+   height:250px;
+   margin: 10px;
+   border-radius: 10px;
+   box-shadow: 0 5px 5px rgb(231, 231, 231);
+   position:relative;
+}
+.interestName{
+    text-align: center;
+    position:absolute;
+    color: #fff;
+    top:180px;    
+}
+.header-text
+{
+   font-size: 30px;
+   text-align: center;
+   padding: 10px;
+}
+.submitInterest
+{
+   text-align: center;
+   padding: 10px;
+   color: #ffff;
+}
+button{
+   background-color: #F17370;
+   width: 300px;
+   height: 50px;
+   border: none;
+   border-radius: 5px;
+   color:#fff;
+   font-size: 16px;
+}
+
+.circle-tick{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   width:80px;
+   height:80px;
+   border-radius: 50%;
+   background-color: #F17370;
+   position:absolute;
+}
+
+.fa-check{
+   font-size: 32px;
+   color: #fff;
+}
